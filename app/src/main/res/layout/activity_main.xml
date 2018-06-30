@@ -10,20 +10,20 @@
         android:layout_height="match_parent">
 
         <TextView
-            style="@style/Title"
             android:id="@+id/title"
+            style="@style/Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="computer fundamentals quiz"
-            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:gravity="center"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+            android:text="computer fundamentals quiz"
+            android:textAllCaps="true"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@id/title">
+            android:layout_below="@id/title"
+            android:orientation="vertical">
 
             <TextView
                 style="@style/Question_Title"
@@ -43,22 +43,22 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    style="@style/Answers"
                     android:id="@+id/radio_1a"
+                    style="@style/Answers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Central Power Unit"/>
 
                 <RadioButton
-                    style="@style/Answers"
                     android:id="@+id/radio_1b"
+                    style="@style/Answers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Control Power Unit"/>
 
                 <RadioButton
-                    style="@style/Answers"
                     android:id="@+id/radio_1c"
+                    style="@style/Answers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Central Processing Unit"/>
@@ -155,22 +155,22 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
-                        style="@style/Answers"
                         android:id="@+id/radio_4a"
+                        style="@style/Answers"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Bytes"/>
 
                     <RadioButton
-                        style="@style/Answers"
                         android:id="@+id/radio_4b"
+                        style="@style/Answers"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Hertz"/>
 
                     <RadioButton
-                        style="@style/Answers"
                         android:id="@+id/radio_4c"
+                        style="@style/Answers"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Metres"/>
@@ -224,31 +224,22 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    style="@style/Buttons"
                     android:id="@+id/submit_btn"
+                    style="@style/Buttons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:text="SUBMIT"
-                    android:onClick="SubmitTest"/>
+                    android:onClick="SubmitTest"
+                    android:text="SUBMIT"/>
 
                 <Button
-                    style="@style/Buttons"
                     android:id="@+id/reset_btn"
+                    style="@style/Buttons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="RESET"
-                    android:onClick="ResetTest"/>
-
-                <Button
-                    style="@style/Buttons"
-                    android:id="@+id/review_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:text="REVIEW QUESTIONS"
-                    android:onClick="ReviewAnswers"/>
+                    android:onClick="ResetTest"
+                    android:text="RESET"/>
 
             </RelativeLayout>
 

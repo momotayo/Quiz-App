@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     int correct = 0;
     int incorrect = 0;
-    int total = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,9 +108,5 @@ public class MainActivity extends AppCompatActivity {
         txtAnswer.getText().clear();
 
     }
-
-    /* This method is called when the Submit button is pressed */
-    public void ReviewAnswers (View view){
-
-    }
+    
 }
