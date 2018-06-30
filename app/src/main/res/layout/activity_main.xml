@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/Title"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="computer fundamentals quiz"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/title">
+
+            <TextView
+                style="@style/Question_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 1"/>
+
+            <TextView
+                style="@style/Questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Question1"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/Answers"
+                    android:id="@+id/radio_1a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Central Power Unit"/>
+
+                <RadioButton
+                    style="@style/Answers"
+                    android:id="@+id/radio_1b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Control Power Unit"/>
+
+                <RadioButton
+                    style="@style/Answers"
+                    android:id="@+id/radio_1c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Central Processing Unit"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Question_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 2" />
+
+                <TextView
+                    style="@style/Questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Question2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_2a"
+                    style="@style/Answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Input Operation" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_2b"
+                    style="@style/Answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Printing Operation" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_2c"
+                    style="@style/Answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Output Operation" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Question_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 3" />
+
+                <TextView
+                    style="@style/Questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Question3" />
+
+                <EditText
+                    android:id="@+id/text_answer"
+                    style="@style/Answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Answer"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Question_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 4" />
+
+                <TextView
+                    style="@style/Questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Question4"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/Answers"
+                        android:id="@+id/radio_4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bytes"/>
+
+                    <RadioButton
+                        style="@style/Answers"
+                        android:id="@+id/radio_4b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hertz"/>
+
+                    <RadioButton
+                        style="@style/Answers"
+                        android:id="@+id/radio_4c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Metres"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Question_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 5" />
+
+                <TextView
+                    style="@style/Questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Question5" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_5a"
+                    style="@style/Answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hardware" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_5b"
+                    style="@style/Answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Software" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_5c"
+                    style="@style/Answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Midware" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/Buttons"
+                    android:id="@+id/submit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="SUBMIT"
+                    android:onClick="SubmitTest"/>
+
+                <Button
+                    style="@style/Buttons"
+                    android:id="@+id/reset_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="RESET"
+                    android:onClick="ResetTest"/>
+
+                <Button
+                    style="@style/Buttons"
+                    android:id="@+id/review_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="REVIEW QUESTIONS"
+                    android:onClick="ReviewAnswers"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="Question1">What is the full meaning of CPU?</string>
+    <string name="Question2">The computer system does the following:</string>
+    <string name="Question3">The first generation of computer is made up of</string>
+    <string name="Question4">RAM is measured in</string>
+    <string name="Question5">Computer system is divided into the following:</string>
+</resources>

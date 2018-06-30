@@ -1,0 +1,1 @@
+This project creates a quiz application in android studio. It comprises of five questions. The result of the quiz is shown in a toast when the user clicked on the SUBMIT button.
